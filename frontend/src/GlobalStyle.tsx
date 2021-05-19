@@ -62,7 +62,7 @@ const GLOBAL_STYLE = css({
         // order to know where we can stop caring.
         minWidth: 320,
 
-        backgroundColor: "#f7f7f5",
+        backgroundColor: "#f3f3f0",
     },
     h1: {
         fontSize: 32,

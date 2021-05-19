@@ -116,7 +116,8 @@ const Nav: React.FC<NavProps> = ({ items, leafNode }) => {
                 listStyle: "none",
                 margin: 0,
                 padding: 0,
-                borderTop: "1px solid #ccc",
+                border: "1px solid #dfdfdf",
+                backgroundColor: "white",
 
                 [`@media not all and (min-width: ${BREAKPOINT}px)`]: {
                     borderTop: navExpanded ? "1px solid #888" : "none",
@@ -152,7 +153,7 @@ const Nav: React.FC<NavProps> = ({ items, leafNode }) => {
 
                                 "&:hover": {
                                     transitionDuration: "0.05s",
-                                    backgroundColor: "#eee",
+                                    backgroundColor: "#f8f8f8",
                                     textDecoration: "underline",
                                     "& > svg": {
                                         transitionDuration: "0.05s",
@@ -166,7 +167,10 @@ const Nav: React.FC<NavProps> = ({ items, leafNode }) => {
                         </Link>;
 
                     return (
-                        <li key={item.id} css={{ borderBottom: "1px solid #ccc" }}>
+                        <li key={item.id} css={{
+                            borderBottom: "1px solid #dfdfdf",
+                            "&:last-of-type": { border: "none" },
+                        }}>
                             {inner}
                         </li>
                     );
