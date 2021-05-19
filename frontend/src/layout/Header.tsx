@@ -21,7 +21,7 @@ export const Header: React.FC = () => (
         alignItems: "center",
         justifyContent: "space-between",
         backgroundColor: "white",
-        borderBottom: `${HEADER_BORDER_WIDTH}px solid #bbb`,
+        boxShadow: "0 0 8px #c5c5c5",
     }}>
         <Logo />
         <Search />
